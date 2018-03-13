@@ -5,7 +5,9 @@ module Token
 
 import Text.Parsec.Pos
 
-data Token = Token Tag SourcePos
+data Token = Token { _tag :: Tag
+                   , _pos :: SourcePos
+                   }
   deriving Show
 
 data Tag = SYMBOL { _sym :: String }
