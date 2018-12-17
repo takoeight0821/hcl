@@ -21,11 +21,13 @@ description:         Please see the README on Github at <https://github.com/gith
 
 dependencies:
 - base >= 4.7 && < 5
-- language-c
-- pretty
+- parsec
+- array
 
 library:
   source-dirs: src
+  build-tools:
+  - happy
 
 executables:
   hcl-exe:
